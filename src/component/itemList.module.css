@@ -1,0 +1,39 @@
+.wrap {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.wrap:hover {
+  opacity: 0.7;
+}
+
+.img_item {
+  display: block;
+  margin: 0 auto;
+}
+
+.tit_item {
+  display: -webkit-box;
+  /* 두줄로제한? */
+  -webkit-line-clamp: 2;
+  /* 수직으로 두줄제한? */
+  -webkit-box-orient: vertical;
+  /* 이름이 너무길면 오른쪽 부분에 ... */
+  overflow: hidden;
+  width: 160px;
+  margin: 10px auto;
+  /* background-color: red; */
+}
+
+.txt_info {
+  display: block;
+  margin-bottom: 10px;
+  color: #999;
+  text-align: center;
+}
+
+.num_price {
+  font-size: 17px;
+  color: #00bcd4;
+  font-weight: bold;
+}
