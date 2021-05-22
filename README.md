@@ -54,6 +54,10 @@ CSR은 처음에 빈 html을 내려주기 때문에 검색노출? 에서 불리 
 + pre-render
 https://velog.io/@dbfudgudals/pre-render
 
++ 다이나믹 API를 이용한 간단한 로그인 로그아웃 기능구현
+https://velog.io/@dbfudgudals
+
+
 ************************
 ## 구동사진
 
