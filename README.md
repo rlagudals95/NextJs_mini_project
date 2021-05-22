@@ -48,13 +48,15 @@ CSR은 처음에 빈 html을 내려주기 때문에 검색노출? 에서 불리 
 
 ## 배우면서 더 많은 장점을 깨닫게 될 것 같다
 
++환경변수 사용
+ https://velog.io/@dbfudgudals/NEXT.js-%EC%8B%9C%EC%9E%91%ED%95%B4%EB%B3%B4%EA%B8%B0
+
++ pre-render
+https://velog.io/@dbfudgudals/pre-render
+
+
+
 ![image](https://user-images.githubusercontent.com/76252074/119135560-8c255c80-ba79-11eb-935f-14694c5ca298.png)
 ![image](https://user-images.githubusercontent.com/76252074/119135579-947d9780-ba79-11eb-862d-68f5c1f0c47b.png)
-
-## 환경변수 사용
-+ https://velog.io/@dbfudgudals/NEXT.js-%EC%8B%9C%EC%9E%91%ED%95%B4%EB%B3%B4%EA%B8%B0
-
-## pre-render
-+ https://velog.io/@dbfudgudals/pre-render
 
 
