@@ -7,7 +7,7 @@ import Top from "../src/component/Top";
 //pageProps데이터 패칭 메써드를 통해 미리가져온 초기 객체 이것을 사용하지 않는 다면 빈객체가 전달된다
 
 function MyApp({ Component, pageProps }) {
-  console.log("???????", Component); // 여기서 컴포넌트는 index.js다
+  console.log("???????", Component); // 컴포넌트는 페이지가 옮겨질 때마다 변한다
   return (
     <div style={{ width: 1000, margin: "0 auto" }}>
       <Top />

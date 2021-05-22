@@ -14,8 +14,10 @@ export default function Home() {
   const [list, setList] = useState([]);
   const [is_loading, setIsLoading] = useState(true);
 
-  const API_URL =
-    "http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline";
+  //환경변수에서 가져온 url
+  const API_URL = process.env.NEXT_PUBLIC_API_URL;
+  // const API_URL =
+  //   "http://makeup-api.herokuapp.com/api/v1/products.json?brand=dior";
 
   function getData() {
     Axios.get(API_URL).then((res) => {

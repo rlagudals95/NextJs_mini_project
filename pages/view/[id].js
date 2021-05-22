@@ -7,7 +7,7 @@ import axios from "axios";
 import Head from "next/head";
 
 // item 하나하나의 상세보기
-const Post = ({ item }) => {
+const Post = ({ item, name }) => {
   // const router = useRouter(); // 서버 사이드 렌더링을 하면 필요없다
   // const { id } = router.query;
   //const [item, setItem] = useState({});
@@ -36,6 +36,7 @@ const Post = ({ item }) => {
         <title>{item.title}</title>
         <meta name="description" content={item.description}></meta>
       </Head>
+      {name} 환경입니다.
       {item && <Item item={item} />}
     </>
   );
@@ -56,18 +57,19 @@ const Post = ({ item }) => {
   }
 };
 // 서버사이드 렌더링 구현 // 항상 최신상태 유지 // 요청 횟수가 늘어나 퍼포먼스가 떨어짐
+// 서버사이드 내부는 브라우저 환경이 아니다! 서버에서 동작한다
 export async function getServerSideProps(context) {
   //context 엔 params나 응답 쿼리 요청 등이 담겨서 온다
   const id = context.params.id;
   const apiUrl = `http://makeup-api.herokuapp.com/api/v1/products/${id}.json`;
   const res = await axios.get(apiUrl);
   const data = res.data;
-  console.log("context", context);
-  console.log("asdjkfbjkasdhfbkjldsahfkjhaskjldfhljk");
+
   //요 item을 위에 props로 넘겨주자
   return {
     props: {
       item: data,
+      name: process.env.name,
     },
   };
 }
