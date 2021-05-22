@@ -13,7 +13,7 @@ const ItemList = ({ list }) => {
             <Grid.Column key={item.id} className={styles.wrap}>
               <a>
                 {/* 각 아이템을 누르면 [id].js로 간다 */}
-                <Link href={`/view/${item.id}`}>
+                <Link href="/detail/[id]" as={`detail/${item.id}`}>
                   <div>
                     <img
                       src={item.image_link}
