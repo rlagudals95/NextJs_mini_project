@@ -48,8 +48,8 @@ CSR은 처음에 빈 html을 내려주기 때문에 검색노출? 에서 불리 
 
 ## 쓰면서 알게된 NEXT.JS의 장점
 
-+ 환경변수 사용
- https://velog.io/@dbfudgudals/NEXT.js-%EC%8B%9C%EC%9E%91%ED%95%B4%EB%B3%B4%EA%B8%B0
++ CSR과 SSR의 장점을 합친 NEXT.JS
+ https://velog.io/@dbfudgudals/NEXT.JS%EB%9E%80
 
 + pre-render
 https://velog.io/@dbfudgudals/pre-render
